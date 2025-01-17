@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="./assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="./assets/favicon/android-chrome-512x512.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Multi-File Converter</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="./assets/logo.png" alt="Logo" class="logo">
+        <button id="darkModeToggle">
+            <i id="dayIcon" class="fas fa-sun"></i>
+            <i id="nightIcon" class="fas fa-moon" style="display: none;"></i>
+        </button>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Multi-File Converter 🔄</h1>
+            <p class="subtitle">Upload, rename, remove, and convert files with ease</p>
+        </div>
+        <div class="form">
+            <div class="upload-section">
+                <input type="file" id="uploadFiles" multiple class="input-file">
+                <label for="uploadFiles" class="file-btn">Select Files 📤</label>
+            </div>
+            <div id="filePreview" class="file-preview"></div>
+            <div class="options">
+                <div class="form-group">
+                    <label for="outputFormat" class="label">Output Format:</label>
+                    <select id="outputFormat" class="select">
+                        <option value="png">PNG</option>
+                        <option value="jpg">JPG</option>
+                        <option value="jpeg">JPEG</option>
+                        <option value="webp">WEBP</option>
+                    </select>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="convertButton" class="convert-btn">Convert & Download</button>
+                <button id="resetButton" class="reset-btn">Reset</button>
+            </div>
+        </div>
+        <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
