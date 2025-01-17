@@ -17,7 +17,7 @@ A lightweight and user-friendly app to convert images between **PNG**, **JPG**, 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/image-converter-viewer.git
+   git clone https://github.com/safaroww/converter.git
 
 1. **Open the App**:
    Navigate to the cloned folder and open the index.html file in your browser. No installation required!
